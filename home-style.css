@@ -1,0 +1,65 @@
+
+body {
+    margin: 0 auto;
+    max-width: 70em;
+}
+
+
+
+html {
+    font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 28px;
+    }
+}
+
+
+
+.display-1 {
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+
+.logo-image {
+    height: 20vmin;
+}
+
+.logo-container {
+    padding: 2em 0 0;
+}
+
+.display-4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+
+
+.btn-ingredient {
+    margin-top: 0.5em;
+}
+
+footer {
+    margin-top: 2em;
+}
