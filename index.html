@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./home-style.css">
+    <title>Что приготовить?</title>
+</head>
+
+
+<body>
+    <!-- Logo and page header -->
+    <header class="text-center">
+        <img class="logo-image" src="./assets/heart.svg" alt="sohungry">
+        <h1 class="display-1">Что приготовить?</h1>
+    </header>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+                <img src="./assets/menu.svg" alt="Меню">
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <form class="form-inline mt-1 mt-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск по рецептам">
+                    <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Найти</button>
+                </form>
+                <div class="navbar-nav ml-auto">
+                    <button class="btn btn-outline-success ml-0 ml-lg-2 mt-1 mt-lg-0" type="button">Регистрация</button>
+                    <button class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" type="button">Вход</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Выбор фильтров -->
+    <div class="container-fluid pt-4">
+        <div class="row">
+            <main class="col-9">
+                <h2 class="display-4">
+                    Что у вас есть?
+                </h2>
+                <!-- Ингредиенты -->
+                <div class="row">
+                    <div class="col">
+                        <form action="login_form.php" method="post">
+                            <fieldset>
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label for="eggs" class="btn btn-light btn-ingredient">
+                                        Яйца
+                                        <input type="checkbox" name="eggs">
+                                    </label>
+                                    <br>
+                                    <label for="milk" class="btn btn-light btn-ingredient">
+                                        Молоко
+                                        <input type="checkbox" name="milk">
+                                    </label>
+                                    <br>
+                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                                        Ингредиент
+                                        <input type="checkbox" name="ingredient">
+                                    </label>
+                                    <br>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="col">
+                        <form action="login_form.php" method="post">
+                            <fieldset>
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                                    Ингредиент
+                                    <input type="checkbox" name="ingredient">
+                                    </label>
+                                    <br>
+                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                                        Ингредиент
+                                        <input type="checkbox" name="ingredient">
+                                    </label>
+                                    <br>
+                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                                        Ингредиент
+                                        <input type="checkbox" name="ingredient">
+                                    </label>
+                                    <br>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+                <h2 class="display-4">Дополнительно</h2>
+                <div class="row">
+                    <div class="col">
+                        сложность
+                    </div>
+                    <div class="col">
+                        время приема пищи
+                    </div>
+                    <div class="col">
+                        сколько готовить блюдо
+                    </div>
+                </div>
+            </main>
+            <!-- Навигация и доп. ссылки -->
+            <aside class="col-3">
+                доп ссылочки
+            </aside>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid text-align-center">Это тут футер должен быть</footer>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

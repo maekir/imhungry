@@ -1,44 +1,16 @@
-
-body {
-    margin: 0 auto;
-    max-width: 70em;
-}
-
-
-
-html {
-    font-size: 14px;
-}
-
-@include media-breakpoint-up(sm) {
-    html {
-        font-size: 16px;
-    }
-}
-
-@include media-breakpoint-up(md) {
-    html {
-        font-size: 20px;
-    }
-}
-
-@include media-breakpoint-up(lg) {
-    html {
-        font-size: 28px;
-    }
-}
-
-
-
 .display-1 {
     text-align: center;
     padding: 0.5em;
 }
 
-
+body {
+    margin: 0 auto;
+    max-width: 1000px;
+}
 
 .logo-image {
     height: 20vmin;
+    margin: 2em 0 0;
 }
 
 .logo-container {
@@ -46,7 +18,7 @@ html {
 }
 
 .display-4 {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
 }
 
@@ -63,3 +35,17 @@ html {
 footer {
     margin-top: 2em;
 }
+
+header {
+    padding-bottom: 1em;
+}
+
+.btn-menu {
+    padding: 0.3em 0.5em;
+}
+
+nav {
+    padding-bottom: 1em;
+}
+
+
