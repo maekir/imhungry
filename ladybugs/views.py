@@ -2,15 +2,21 @@ from django.shortcuts import render
 from django.contrib.auth import login, authenticate, get_user
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import render, redirect
-from ladybugs.models import Ingredients
+from ladybugs.models import Ingredients, Recipes
 
 # Create your views here.
 from ladybugs.forms import SignUpForm
 
 
-def main_page(request):
-    return render(request, 'main.html',
-                  {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all()})
+def main_page(request):  # дописать функцию
+    if request.method == 'POST':
+        # вывод тех рецептов, которые подходят по продуктам
+        ing_ids = request.POST['ingredients']
+        recipes = Recipes.objects.filter(ingredients__id__in=ing_ids)
+
+    else:
+        return render(request, 'main.html',
+                      {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all()})
 
 
 def register_page(request):

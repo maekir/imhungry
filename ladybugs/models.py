@@ -7,6 +7,7 @@ from django.utils import timezone
 
 
 class Ingredients(models.Model):
+    id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=150)
 
     def __str__(self):

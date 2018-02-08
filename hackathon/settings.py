@@ -24,6 +24,10 @@ SECRET_KEY = 'l=-w)-bisx_gz7+&lcr^p1as==jk&92#h5i$2phinf(awm-$!_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+STATIC_URL = '/static/'
+STATICFILES_DIRS = ['static']
+
+
 LOGIN_REDIRECT_URL = '/'  # возвращение на главную после авторизации
 
 ALLOWED_HOSTS = []
