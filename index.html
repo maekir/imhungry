@@ -32,17 +32,20 @@
                     <a class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./signin.html" role="button">
                         Вход
                     </a>
-                    
+
                     <!-- Выход - только если пользователь авторизован -->
                     <a class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./signin.html" role="button">
                         Выход
                     </a>
                 </div>
+                <!-- /navbar -->
             </div>
+            <!-- /collapse -->
         </nav>
     </div>
+    <!-- /container-fluid -->
 
-    <div class="container-fluid pt-4">
+    <div class="container-fluid mt-4">
         <div class="row">
             <div class="col-md-9">
                 <h2 class="display-4">
@@ -50,154 +53,181 @@
                 </h2>
                 <!-- Ингредиенты -->
                 <div class="row">
+                    <form action="#" method="post">
                     <div class="col d-flex justify-content-center">
-                        
-                        <form action="#" method="post">
+                        <div class="border rounded mt-2 mb-4 p-3">
                             <div class="btn-group-toggle" data-toggle="buttons">
-                                <label for="eggs" class="btn btn-light btn-ingredient">
+                                <label for="eggs" class="btn btn-light ">
                                         Яйца
                                         <input type="checkbox" name="eggs">
                                     </label>
-                                <br>
-                                <label for="milk" class="btn btn-light btn-ingredient">
+                                <label for="milk" class="btn btn-light btn-ingredient mb-1">
                                         Молоко
                                         <input type="checkbox" name="milk">
                                     </label>
-                                <br>
-                                <label for="ingredient" class="btn btn-light btn-ingredient">
+                                <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
                                         Ингредиент
                                         <input type="checkbox" name="ingredient">
                                     </label>
-                                <br>
+                                    <label for="eggs" class="btn btn-light btn-ingredient mb-1">
+                                            Яйца
+                                            <input type="checkbox" name="eggs">
+                                        </label>
+                                    <label for="milk" class="btn btn-light btn-ingredient mb-1">
+                                            Молоко
+                                            <input type="checkbox" name="milk">
+                                        </label>
+                                    <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
+                                            Ингредиент
+                                            <input type="checkbox" name="ingredient">
+                                        </label>
+                                        <label for="eggs" class="btn btn-light btn-ingredient mb-1">
+                                                Яйца
+                                                <input type="checkbox" name="eggs">
+                                            </label>
+                                        <label for="milk" class="btn btn-light btn-ingredient mb-1">
+                                                Молоко
+                                                <input type="checkbox" name="milk">
+                                            </label>
+                                        <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
+                                                Ингредиент
+                                                <input type="checkbox" name="ingredient">
+                                            </label>
                             </div>
-                            </fieldset>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="btn-group-toggle" data-toggle="buttons">
-                            <label for="ingredient" class="btn btn-light btn-ingredient">
-                                    Ингредиент
-                                    <input type="checkbox" name="ingredient">
-                                    </label>
-                            <br>
-                            <label for="ingredient" class="btn btn-light btn-ingredient">
-                                        Ингредиент
-                                        <input type="checkbox" name="ingredient">
-                                    </label>
-                            <br>
-                            <label for="ingredient" class="btn btn-light btn-ingredient">
-                                        Ингредиент
-                                        <input type="checkbox" name="ingredient">
-                                    </label>
-                            <br>
+                            <!-- /btn-group -->
                         </div>
+                        <!-- /border -->
+                    </div>
+                    <!-- /col -->
                 </div>
-                </div>
-                <h2 class="display-4">Дополнительно</h2>
-
-                <!-- Вариант 1 -->
-                <div class="card mt-2">
-                <div class="navbar justify-content-between">
+                <!-- дополнительные фильтры -->
+                <h2 class="display-4 mb-2">Дополнительно</h2>
+                <div class="border rounded">
+                    <div class="navbar justify-content-between">
                         <a class="navbar-brand">Сложность</a>
                         <div class="btn-group-toggle" data-toggle="buttons">
-                                <label for="easy" class="btn btn-light btn-ingredient mt-0">
+                            <label for="easy" class="btn btn-light btn-ingredient mt-0">
                                     Легко <input type="checkbox" name="easy">
                                 </label>
-                                <label for="meddif" class="btn btn-light btn-ingredient mt-0">
+                            <label for="meddif" class="btn btn-light btn-ingredient mt-0">
                                     Средне... <input type="checkbox" name="meddif">
                                 </label>
-                                <label for="difficult" class="btn btn-light btn-ingredient mt-0">
+                            <label for="difficult" class="btn btn-light btn-ingredient mt-0">
                                     Сложно! <input type="checkbox" name="difficult">
                                 </label>
-                            </div>
+                        </div> 
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /navbar -->
                 </div>
-            </div>
-            <div class="card mt-2">
-                <div class="navbar justify-content-between">
+                <!-- /border -->
+                <div class="border rounded mt-2">
+                    <div class="navbar justify-content-between">
                         <a class="navbar-brand">Приём пищи</a>
-                                <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label for="breakfast" class="btn btn-light btn-ingredient mt-0">
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label for="breakfast" class="btn btn-light btn-ingredient mt-0">
                                         Завтрак <input type="checkbox" name="breakfast">
                                     </label>
-                                    <label for="dinner" class="btn btn-light btn-ingredient mt-0">
+                            <label for="dinner" class="btn btn-light btn-ingredient mt-0">
                                         Обед <input type="checkbox" name="dinner">
                                     </label>
-                                    <label for="supper" class="btn btn-light btn-ingredient mt-0">
+                            <label for="supper" class="btn btn-light btn-ingredient mt-0">
                                         Ужин <input type="checkbox" name="supper">
                                     </label>
-                                    <label for="snack" class="btn btn-light btn-ingredient mt-0">
+                            <label for="snack" class="btn btn-light btn-ingredient mt-0">
                                         Перекус <input type="checkbox" name="snack">
                                     </label>
-                            </div>
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /navbar -->
                 </div>
-            </div>
-            <div class="card mt-2">
-                <div class="navbar justify-content-between">
+                <!-- /border -->
+                <div class="border rounded mt-2">
+                    <div class="navbar justify-content-between">
                         <a class="navbar-brand">Время приготовления</a>
                         <div class="btn-group-toggle" data-toggle="buttons">
-                                <label for="vvfast" class="btn btn-light btn-ingredient mt-0">
+                            <label for="vvfast" class="btn btn-light btn-ingredient mt-0">
                                     Очень быстро! <input type="checkbox" name="vvfast">
                                 </label>
-                                <label for="fast" class="btn btn-light btn-ingredient mt-0">
+                            <label for="fast" class="btn btn-light btn-ingredient mt-0">
                                     Быстро <input type="checkbox" name="fast">
                                 </label>
-                                <label for="slow" class="btn btn-light btn-ingredient mt-0">
+                            <label for="slow" class="btn btn-light btn-ingredient mt-0">
                                     Медленно... <input type="checkbox" name="slow">
                                 </label>
-                            </div>
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /navbar -->
                 </div>
-            </div> 
-            <div class="d-flex justify-content-center mt-2">
+                <!-- /border -->
+                <div class="d-flex justify-content-center mt-2">
                     <input class="button btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-2" type="submit" value="Что можно приготовить?">
-            </div>      
-        </div>
+                </div>
+            </div>
+            <!-- /col -->
             <!-- Навигация и доп. ссылки -->
-            <div class="col-12 col-md-3">
+            <div class="col-12 col-md-3 mt-4 mt-md-0">
                 <h4 class="text-center">Случайные рецепты</h4>
                 <div class="row">
                     <div class="col col-md-12">
-                            <div class="card mb-2 mb-md-0">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Чай</h5>
-                                        <p>Вам понадобится:</p>
-                                        <p class="card-text">
-                                            <ul>
-                                                <li>Пакетик чая</li>
-                                                <li>Сахар</li>
-                                                <li>Вода</li>
-                                            </ul>
-                                        </p>
-                                        <a href="#" class="card-link">Полный рецепт</a>
-                                    </div> <!-- card-body -->
-                                </div> <!-- card -->
-                    </div> <!-- col -->
-                    <div class="col col-md-12">
-                            <div class="card mt-md-2 mb-md-3">
-                                    <div class="card-body text-center">
-                                        <h5 class="card-title">Макароны</h5>
-                                        <p>Вам понадобится:</p>
-                                        <p class="card-text">
-                                            <ul>
-                                                <li>Макароны</li>
-                                                <li>Соль</li>
-                                                <li>Вода</li>
-                                            </ul>
-                                        </p>
-                                        <a href="#" class="card-link">Полный рецепт</a>
-                                    </div> <!-- card-body -->
-                                </div> <!-- card -->
-                    </div> <!-- col -->
-                </div>
-                <div class="col p-0">
-                    <form class="form-inline mt-3 d-flex flex-column align-items-stretch">
-                            <input class="form-control mr-2 mr-md-0" type="search" placeholder="Поиск по рецептам">
-                            <button class="btn btn-outline-success mt-1 align-item-stretch" type="submit">Найти</button>
-                    </form>
+                        <div class="card mb-2 mb-md-0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Чай</h5>
+                                <p>Вам понадобится:</p>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Пакетик чая</li>
+                                        <li>Сахар</li>
+                                        <li>Вода</li>
+                                    </ul>
+                                </p>
+                                <a href="#" class="card-link">Полный рецепт</a>
+                            </div>
+                            <!-- /card-body -->
+                        </div>
+                        <!-- /card -->
                     </div>
-                </div> <!-- Навигация и доп. ссылки -->
+                    <!-- /col -->
+                    <div class="col col-md-12">
+                        <div class="card mt-md-2 mb-md-3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Макароны</h5>
+                                <p>Вам понадобится:</p>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Макароны</li>
+                                        <li>Соль</li>
+                                        <li>Вода</li>
+                                    </ul>
+                                </p>
+                                <a href="#" class="card-link">Полный рецепт</a>
+                            </div>
+                            <!-- /card-body -->
+                        </div>
+                        <!-- /card -->
+                    </div>
+                    <!-- /col -->
+                    <div class="col-12 col-md">
+                        <form class="form mt-3 d-flex flex-column align-items-stretch">
+                            <input class="form-control mr-2 mr-md-0" type="search" placeholder="Поиск по рецептам">
+                            <button class="btn btn-outline-success mt-1 mx-auto d-block" type="submit">Найти</button>
+                        </form>
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+           
         </div>
-    </div>
+        <!-- /Навигация и доп. ссылки -->
+    </div> 
+    <!-- /container -->
+
     <!-- Footer -->
-    <footer class="container-fluid text-align-center">@ladybugs 2018</footer>
+    <footer class="container-fluid mt-4">
+        <p class="text-right">@ladybugs 2018</p>
+    </footer>
 
     <!-- Скрипты -->
     <script src="./js/jquery.min.js"></script>

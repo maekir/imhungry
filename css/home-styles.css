@@ -22,31 +22,5 @@ body {
     text-align: center;
 }
 
-.text-align-center {
-    text-align: center;
-}
 
-.btn-ingredient {
-    margin-top: 0.5em;
-}
-
-footer {
-    margin-top: 2em;
-}
-
-header {
-    padding-bottom: 1em;
-}
-
-.btn-menu {
-    padding: 0.3em 0.5em;
-}
-
-nav {
-    padding-bottom: 1em;
-}
-
-.search-form {
-    flex-grow: 1;
-}
 
