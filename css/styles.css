@@ -1,3 +1,29 @@
+.button, .button--inverse {
+  margin: 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  color: #6772e5;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  transition: all .15s ease;
+  cursor: pointer; }
+  .button:hover, .button--inverse:hover {
+    color: #7795f8;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08); }
+  .button--inverse {
+    color: #fff;
+    background: #6772e5; }
+    .button--inverse:hover {
+      color: #fff;
+      background-color: #7795f8; }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -7,7 +33,7 @@
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
-  --purple: #6f42c1;
+  --purple: #6772e5;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
