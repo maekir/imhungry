@@ -19,6 +19,7 @@
         <h1 class="display-1">Что приготовить?</h1>
     </header>
 
+    <!-- Навигационная панель -->
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
@@ -26,6 +27,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar-content">
                 <div class="navbar-nav ml-auto">
+
+                    <!-- Регистрация и вход - пользователь не авторизован -->
                     <a class="btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./register.html" role="button">
                         Регистрация
                     </a>
@@ -37,70 +40,76 @@
                     <a class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./signin.html" role="button">
                         Выход
                     </a>
+
                 </div>
-                <!-- /navbar -->
+                <!-- /navbar-nav -->
             </div>
             <!-- /collapse -->
         </nav>
     </div>
     <!-- /container-fluid -->
 
+    <!-- Основной контент страницы -->
     <div class="container-fluid mt-4">
         <div class="row">
+            <!-- Фильтры поиска -->
             <div class="col-md-9">
                 <h2 class="display-4">
                     Что у вас есть?
                 </h2>
-                <!-- Ингредиенты -->
                 <div class="row">
-                    <form action="#" method="post">
-                        <div class="col d-flex justify-content-center">
-                            <div class="border rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
-                                <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label for="eggs" class="btn btn-light ">
+                    <div class="col d-flex justify-content-center">
+                        <form action="#" method="post">
+                        <!-- Форма поиска по ингредиентам и прочие фильтры -->
+                        
+                        <!-- Ингредиенты -->
+                        <div class="border rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label for="eggs" class="btn btn-light ">
+                                    Яйца
+                                    <input type="checkbox" name="eggs">
+                                </label>
+                                <label for="milk" class="btn btn-light btn-ingredient mb-1">
+                                    Молоко
+                                    <input type="checkbox" name="milk">
+                                </label>
+                                <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
+                                    Ингредиент
+                                    <input type="checkbox" name="ingredient">
+                                </label>
+                                <label for="eggs" class="btn btn-light btn-ingredient mb-1">
                                         Яйца
                                         <input type="checkbox" name="eggs">
                                     </label>
-                                    <label for="milk" class="btn btn-light btn-ingredient mb-1">
+                                <label for="milk" class="btn btn-light btn-ingredient mb-1">
                                         Молоко
                                         <input type="checkbox" name="milk">
                                     </label>
-                                    <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
+                                <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
                                         Ингредиент
                                         <input type="checkbox" name="ingredient">
                                     </label>
-                                    <label for="eggs" class="btn btn-light btn-ingredient mb-1">
+                                <label for="eggs" class="btn btn-light btn-ingredient mb-1">
                                             Яйца
                                             <input type="checkbox" name="eggs">
                                         </label>
-                                    <label for="milk" class="btn btn-light btn-ingredient mb-1">
+                                <label for="milk" class="btn btn-light btn-ingredient mb-1">
                                             Молоко
                                             <input type="checkbox" name="milk">
                                         </label>
-                                    <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
+                                <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
                                             Ингредиент
                                             <input type="checkbox" name="ingredient">
                                         </label>
-                                    <label for="eggs" class="btn btn-light btn-ingredient mb-1">
-                                                Яйца
-                                                <input type="checkbox" name="eggs">
-                                            </label>
-                                    <label for="milk" class="btn btn-light btn-ingredient mb-1">
-                                                Молоко
-                                                <input type="checkbox" name="milk">
-                                            </label>
-                                    <label for="ingredient" class="btn btn-light btn-ingredient mb-1">
-                                                Ингредиент
-                                                <input type="checkbox" name="ingredient">
-                                            </label>
-                                </div>
-                                <!-- /btn-group -->
                             </div>
-                            <!-- /border -->
+                            <!-- /btn-group -->
                         </div>
-                        <!-- /col -->
+                        <!-- /border -->
+                    </div>
+                    <!-- /col -->
                 </div>
-                <!-- дополнительные фильтры -->
+
+                <!-- Дополнительные фильтры -->
                 <h2 class="display-4 mb-2">Дополнительно</h2>
                 <div class="border rounded">
                     <div class="navbar justify-content-between">
@@ -156,6 +165,9 @@
                             <label for="slow" class="btn btn-light btn-ingredient mt-0">
                                     Медленно... <input type="checkbox" name="slow">
                                 </label>
+                            <label for="vvslow" class="btn btn-light btn-ingredient mt-0">
+                                    Очень медленно! <input type="checkbox" name="vvslow">
+                                </label>
                         </div>
                         <!-- /btn-group -->
                     </div>
@@ -165,12 +177,17 @@
                 <div class="d-flex justify-content-center mt-2">
                     <input class="button btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-2 pl-3 pr-3" type="submit" value="Что можно приготовить?">
                 </div>
+            </form>
             </div>
             <!-- /col -->
+
+
             <!-- Навигация и доп. ссылки -->
             <div class="col-12 col-md-3 mt-4 mt-md-0">
                 <div class="row">
                     <div class="col col-md-12">
+
+                        <!-- Случайные рецепты -->
                         <div class="card mb-2 mb-md-0">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Чай</h5>
@@ -210,6 +227,7 @@
                             <!-- /card-body -->
                         </div>
                         <!-- /card -->
+
                     </div>
                     <!-- /col -->
                     <div class="col-12 col-md">
