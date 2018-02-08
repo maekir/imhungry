@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./home-style.css">
     <title>Что приготовить?</title>
@@ -24,19 +24,14 @@
                 <img src="./assets/menu.svg" alt="Меню">
             </button>
             <div class="collapse navbar-collapse" id="navbar-content">
-                <form class="form-inline mt-1 mt-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Поиск по рецептам">
-                    <button class="btn btn-outline-success my-1 my-sm-0" type="submit">Найти</button>
-                </form>
                 <div class="navbar-nav ml-auto">
-                    <button class="btn btn-outline-success ml-0 ml-lg-2 mt-1 mt-lg-0" type="button">Регистрация</button>
+                    <button class="btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-0" type="button">Регистрация</button>
                     <button class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" type="button">Вход</button>
                 </div>
             </div>
         </nav>
     </div>
 
-    <!-- Выбор фильтров -->
     <div class="container-fluid pt-4">
         <div class="row">
             <main class="col-9">
@@ -45,74 +40,221 @@
                 </h2>
                 <!-- Ингредиенты -->
                 <div class="row">
-                    <div class="col">
-                        <form action="login_form.php" method="post">
-                            <fieldset>
-                                <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label for="eggs" class="btn btn-light btn-ingredient">
+                    <div class="col d-flex justify-content-center">
+                        
+                        <form action="#" method="post">
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label for="eggs" class="btn btn-light btn-ingredient">
                                         Яйца
                                         <input type="checkbox" name="eggs">
                                     </label>
-                                    <br>
-                                    <label for="milk" class="btn btn-light btn-ingredient">
+                                <br>
+                                <label for="milk" class="btn btn-light btn-ingredient">
                                         Молоко
                                         <input type="checkbox" name="milk">
                                     </label>
-                                    <br>
-                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                                <br>
+                                <label for="ingredient" class="btn btn-light btn-ingredient">
                                         Ингредиент
                                         <input type="checkbox" name="ingredient">
                                     </label>
-                                    <br>
-                                </div>
+                                <br>
+                            </div>
                             </fieldset>
-                        </form>
                     </div>
-                    <div class="col">
-                        <form action="login_form.php" method="post">
-                            <fieldset>
-                                <div class="btn-group-toggle" data-toggle="buttons">
-                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                    <div class="col d-flex justify-content-center">
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label for="ingredient" class="btn btn-light btn-ingredient">
                                     Ингредиент
                                     <input type="checkbox" name="ingredient">
                                     </label>
-                                    <br>
-                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                            <br>
+                            <label for="ingredient" class="btn btn-light btn-ingredient">
                                         Ингредиент
                                         <input type="checkbox" name="ingredient">
                                     </label>
-                                    <br>
-                                    <label for="ingredient" class="btn btn-light btn-ingredient">
+                            <br>
+                            <label for="ingredient" class="btn btn-light btn-ingredient">
                                         Ингредиент
                                         <input type="checkbox" name="ingredient">
                                     </label>
-                                    <br>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
+                            <br>
+                        </div>
+                </div>
                 </div>
                 <h2 class="display-4">Дополнительно</h2>
+
+                <!-- Вариант 1 -->
+                <div class="card mt-2">
+                <div class="navbar justify-content-between">
+                        <a class="navbar-brand">Сложность</a>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                                <label for="easy" class="btn btn-light btn-ingredient mt-0">
+                                    Легко <input type="checkbox" name="easy">
+                                </label>
+                                <label for="meddif" class="btn btn-light btn-ingredient mt-0">
+                                    Средне... <input type="checkbox" name="meddif">
+                                </label>
+                                <label for="difficult" class="btn btn-light btn-ingredient mt-0">
+                                    Сложно! <input type="checkbox" name="difficult">
+                                </label>
+                            </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="navbar justify-content-between">
+                        <a class="navbar-brand">Приём пищи</a>
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <label for="breakfast" class="btn btn-light btn-ingredient mt-0">
+                                        Завтрак <input type="checkbox" name="breakfast">
+                                    </label>
+                                    <label for="dinner" class="btn btn-light btn-ingredient mt-0">
+                                        Обед <input type="checkbox" name="dinner">
+                                    </label>
+                                    <label for="supper" class="btn btn-light btn-ingredient mt-0">
+                                        Ужин <input type="checkbox" name="supper">
+                                    </label>
+                                    <label for="snack" class="btn btn-light btn-ingredient mt-0">
+                                        Перекус <input type="checkbox" name="snack">
+                                    </label>
+                            </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="navbar justify-content-between">
+                        <a class="navbar-brand">Время приготовления</a>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                                <label for="vvfast" class="btn btn-light btn-ingredient mt-0">
+                                    Очень быстро! <input type="checkbox" name="vvfast">
+                                </label>
+                                <label for="fast" class="btn btn-light btn-ingredient mt-0">
+                                    Быстро <input type="checkbox" name="fast">
+                                </label>
+                                <label for="slow" class="btn btn-light btn-ingredient mt-0">
+                                    Медленно... <input type="checkbox" name="slow">
+                                </label>
+                            </div>
+                </div>
+            </div> 
+            <div class="d-flex justify-content-center mt-2">
+                    <input class="button btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-2" type="submit" value="Что можно приготовить?">
+                    </div>      
+                <!-- Вариант 2 -->
+                <h2 class="display-4 mt-5 mb-2">Дополнительно</h2>
                 <div class="row">
                     <div class="col">
-                        сложность
+                        <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Сложность</h5>
+                                    <p class="card-text">
+                                        <div class="btn-group-toggle" data-toggle="buttons">
+                                            <label for="easy" class="btn btn-light btn-ingredient">
+                                                Легко <input type="checkbox" name="easy">
+                                            </label>
+                                            <label for="meddif" class="btn btn-light btn-ingredient">
+                                                Средне... <input type="checkbox" name="meddif">
+                                            </label>
+                                            <label for="difficult" class="btn btn-light btn-ingredient">
+                                                Сложно! <input type="checkbox" name="difficult">
+                                            </label>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
                     </div>
                     <div class="col">
-                        время приема пищи
+                        <div class="card">
+                                <div class="card-body text-center">
+                                    <h5 class="card-title">Время приготовления</h5>
+                                    <p class="card-text">
+                                        <div class="btn-group-toggle" data-toggle="buttons">
+                                            <label for="vvfast" class="btn btn-light btn-ingredient">
+                                                Очень быстро! <input type="checkbox" name="vvfast">
+                                            </label>
+                                            <label for="fast" class="btn btn-light btn-ingredient">
+                                                Быстро <input type="checkbox" name="fast">
+                                            </label>
+                                            <label for="slow" class="btn btn-light btn-ingredient">
+                                                Медленно... <input type="checkbox" name="slow">
+                                            </label>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>        
                     </div>
                     <div class="col">
-                        сколько готовить блюдо
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Приём пищи</h5>
+                                <p class="card-text">
+                                    <div class="btn-group-toggle" data-toggle="buttons">
+                                        <label for="breakfast" class="btn btn-light btn-ingredient">
+                                            Завтрак <input type="checkbox" name="breakfast">
+                                        </label>
+                                        <label for="dinner" class="btn btn-light btn-ingredient">
+                                            Обед <input type="checkbox" name="dinner">
+                                        </label>
+                                        <label for="supper" class="btn btn-light btn-ingredient">
+                                            Ужин <input type="checkbox" name="supper">
+                                        </label>
+                                        <label for="snack" class="btn btn-light btn-ingredient">
+                                            Перекус <input type="checkbox" name="snack">
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+                        </div>
                     </div>
+                    </form>
+                </div>
+                <div class="d-flex justify-content-center mt-2">
+                <input class="button btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-2" type="submit" value="Что можно приготовить?">
                 </div>
             </main>
+
+
             <!-- Навигация и доп. ссылки -->
-            <aside class="col-3">
-                доп ссылочки
-            </aside>
+            <aside class="col-12 col-md-3">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Чай</h5>
+                        <p>Вам понадобится:</p>
+                        <p class="card-text">
+                            <ul>
+                                <li>Пакетик чая</li>
+                                <li>Сахар</li>
+                                <li>Вода</li>
+                            </ul>
+                        </p>
+                        <a href="#" class="card-link">Полный рецепт</a>
+                    </div>
+                </div>
+                <form class="form-inline mt-3 d-flex flex-column align-items-stretch">
+                    <input class="form-control mr-2 mr-md-0" type="search" placeholder="Поиск по рецептам">
+                    <button class="btn btn-outline-success mt-1" type="submit">Найти</button>
+                </form>
+                <div class="card mt-md-3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Макароны</h5>
+                            <p>Вам понадобится:</p>
+                            <p class="card-text">
+                                <ul>
+                                    <li>Макароны</li>
+                                    <li>Соль</li>
+                                    <li>Вода</li>
+                                </ul>
+                            </p>
+                            <a href="#" class="card-link">Полный рецепт</a>
+                        </div>
+                    </div>
+            </aside> <!-- Навигация и доп. ссылки -->
+
+
+
         </div>
     </div>
     <!-- Footer -->
-    <footer class="container-fluid text-align-center">Это тут футер должен быть</footer>
+    <footer class="container-fluid text-align-center">@ladybugs 2018</footer>
 
 
     <script src="./js/jquery.min.js"></script>

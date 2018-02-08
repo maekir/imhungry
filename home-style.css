@@ -48,4 +48,7 @@ nav {
     padding-bottom: 1em;
 }
 
+.search-form {
+    flex-grow: 1;
+}
 
