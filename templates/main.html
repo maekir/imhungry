@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+Hello, {{ name }}!
+<form action="#" method="post">
+    <div class="col d-flex justify-content-center">
+        <div class="border rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
+            <div class="btn-group-toggle" data-toggle="buttons">
+                {% for ingredient in ingredients %}
+                    <label for="{{ ingredient.id }}" class="btn btn-light active">
+                        {{ ingredient.name }}
+                        <input type="checkbox" name="ingredients" value="{{ ingredient.id }}">
+                    </label>
+                {% endfor %}
+
+            </div>
+            <!-- /btn-group -->
+        </div>
+        <!-- /border -->
+    </div>
+    <!-- /col -->
+</form>
+</body>
+</html>
