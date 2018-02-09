@@ -8,12 +8,15 @@ from ladybugs.models import Ingredients, Recipes
 from ladybugs.forms import SignUpForm
 
 
-def main_page(request):  # дописать функцию
+def main_page(request):
     if request.method == 'POST':
         # вывод тех рецептов, которые подходят по продуктам
         ing_ids = request.POST['ingredients']
         recipes = Recipes.objects.filter(ingredients__id__in=ing_ids)
-
+        # добавить переменную recipes на main.html для отображения найденных рецептов
+        return render(request, 'main.html',
+                      {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
+                       'recipes': recipes})
     else:
         return render(request, 'main.html',
                       {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all()})

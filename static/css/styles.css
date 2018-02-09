@@ -1759,7 +1759,6 @@ pre code {
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
-
     .table-responsive-sm > .table-bordered {
         border: 0;
     }
@@ -1773,7 +1772,6 @@ pre code {
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
-
     .table-responsive-md > .table-bordered {
         border: 0;
     }
@@ -1787,7 +1785,6 @@ pre code {
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
-
     .table-responsive-lg > .table-bordered {
         border: 0;
     }
@@ -1795,10 +1792,10 @@ pre code {
 
 @media (max-width: 1199.98px) {
     .table-responsive-xl {
-        display: block;
-        width: 100%;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
 
@@ -2223,7 +2220,6 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         justify-content: center;
         margin-bottom: 0;
     }
-
     .form-inline .form-group {
         display: flex;
         flex: 0 0 auto;
@@ -2231,21 +2227,17 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         align-items: center;
         margin-bottom: 0;
     }
-
     .form-inline .form-control {
         display: inline-block;
         width: auto;
         vertical-align: middle;
     }
-
     .form-inline .form-control-plaintext {
         display: inline-block;
     }
-
     .form-inline .input-group {
         width: auto;
     }
-
     .form-inline .form-check {
         display: flex;
         align-items: center;
@@ -2253,19 +2245,16 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
         width: auto;
         padding-left: 0;
     }
-
     .form-inline .form-check-input {
         position: relative;
         margin-top: 0;
         margin-right: 0.25rem;
         margin-left: 0;
     }
-
     .form-inline .custom-control {
         align-items: center;
         justify-content: center;
     }
-
     .form-inline .custom-control-label {
         margin-bottom: 0;
     }
@@ -3797,7 +3786,6 @@ tbody.collapse.show {
         flex-flow: row nowrap;
         justify-content: flex-start;
     }
-
     .navbar-expand-sm .navbar-nav {
         flex-direction: row;
     }
@@ -3815,21 +3803,17 @@ tbody.collapse.show {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-
     .navbar-expand-sm > .container,
     .navbar-expand-sm > .container-fluid {
         flex-wrap: nowrap;
     }
-
     .navbar-expand-sm .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
-
     .navbar-expand-sm .navbar-toggler {
         display: none;
     }
-
     .navbar-expand-sm .dropup .dropdown-menu {
         top: auto;
         bottom: 100%;
@@ -3849,7 +3833,6 @@ tbody.collapse.show {
         flex-flow: row nowrap;
         justify-content: flex-start;
     }
-
     .navbar-expand-md .navbar-nav {
         flex-direction: row;
     }
@@ -3867,21 +3850,17 @@ tbody.collapse.show {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-
     .navbar-expand-md > .container,
     .navbar-expand-md > .container-fluid {
         flex-wrap: nowrap;
     }
-
     .navbar-expand-md .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
-
     .navbar-expand-md .navbar-toggler {
         display: none;
     }
-
     .navbar-expand-md .dropup .dropdown-menu {
         top: auto;
         bottom: 100%;
@@ -3901,7 +3880,6 @@ tbody.collapse.show {
         flex-flow: row nowrap;
         justify-content: flex-start;
     }
-
     .navbar-expand-lg .navbar-nav {
         flex-direction: row;
     }
@@ -3919,21 +3897,17 @@ tbody.collapse.show {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-
     .navbar-expand-lg > .container,
     .navbar-expand-lg > .container-fluid {
         flex-wrap: nowrap;
     }
-
     .navbar-expand-lg .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
-
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
-
     .navbar-expand-lg .dropup .dropdown-menu {
         top: auto;
         bottom: 100%;
@@ -3953,7 +3927,6 @@ tbody.collapse.show {
         flex-flow: row nowrap;
         justify-content: flex-start;
     }
-
     .navbar-expand-xl .navbar-nav {
         flex-direction: row;
     }
@@ -3971,21 +3944,17 @@ tbody.collapse.show {
         padding-right: 0.5rem;
         padding-left: 0.5rem;
     }
-
     .navbar-expand-xl > .container,
     .navbar-expand-xl > .container-fluid {
         flex-wrap: nowrap;
     }
-
     .navbar-expand-xl .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
     }
-
     .navbar-expand-xl .navbar-toggler {
         display: none;
     }
-
     .navbar-expand-xl .dropup .dropdown-menu {
         top: auto;
         bottom: 100%;
@@ -4369,7 +4338,6 @@ tbody.collapse.show {
         column-count: 3;
         column-gap: 1.25rem;
     }
-
     .card-columns .card {
         display: inline-block;
         width: 100%;
@@ -8749,7 +8717,6 @@ a.text-dark:hover, a.text-dark:focus {
     .table {
         border-collapse: collapse !important;
     }
-
     .table td,
     .table th {
         background-color: #fff !important;
