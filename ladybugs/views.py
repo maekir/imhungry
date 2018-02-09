@@ -13,7 +13,6 @@ def main_page(request):
         # вывод тех рецептов, которые подходят по продуктам
         ing_ids = request.POST['ingredients']
         recipes = Recipes.objects.filter(ingredients__id__in=ing_ids)
-        # добавить переменную recipes на main.html для отображения найденных рецептов
         return render(request, 'main.html',
                       {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
                        'recipes': recipes})
