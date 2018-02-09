@@ -30,15 +30,15 @@
                 <div class="navbar-nav ml-auto">
 
                     <!-- Регистрация и вход - пользователь не авторизован -->
-                    <a class="btn btn-outline-primary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./register" role="button">
+                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./register" role="button">
                     Регистрация
                 </a>
-                    <a class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./login" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./login" role="button">
                     Вход
                 </a>
 
                     <!-- Выход - только если пользователь авторизован -->
-                    <a class="btn btn-outline-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="#" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="#" role="button">
                     Выход
                 </a>
 
@@ -63,10 +63,10 @@
                     <form action="#" method="post">
 
                         <!-- Форма поиска по ингредиентам и прочие фильтры -->
-                        <div class="border rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
+                        <div class="border border-light rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
                             <div class="btn-group-toggle" data-toggle="buttons">
                                 {% for ingredient in ingredients %}
-                                <label for="{{ ingredient.id }}" class="btn btn-light">
+                                <label for="{{ ingredient.id }}" class="btn btn-light m-1">
                                     {{ ingredient.name }}
                                     <input type="checkbox" name="ingredients" value="{{ ingredient.id }}">
                                 </label> {% endfor %}
@@ -79,7 +79,7 @@
 
                         <!-- Дополнительные фильтры -->
                         <h2 class="display-4 mb-2">Дополнительно</h2>
-                        <div class="border rounded">
+                        <div class="border border-light rounded">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Сложность</a>
                                 <div class="btn-group-toggle" data-toggle="buttons">
@@ -98,9 +98,9 @@
                             <!-- /navbar -->
                         </div>
                         <!-- /border -->
-                        <div class="border rounded mt-2">
+                        <div class="border border-light rounded mt-2">
                             <div class="navbar justify-content-between">
-                                <a class="navbar-brand">Приём пищи</a>
+                                <a class="navbar-brand">Приём</a>
                                 <div class="btn-group-toggle" data-toggle="buttons">
                                     <label for="breakfast" class="btn btn-light btn-ingredient mt-0">
                                     Завтрак <input type="checkbox" name="breakfast">
@@ -120,21 +120,21 @@
                             <!-- /navbar -->
                         </div>
                         <!-- /border -->
-                        <div class="border rounded mt-2">
+                        <div class="border border-light rounded mt-2">
                             <div class="navbar justify-content-between">
-                                <a class="navbar-brand">Время приготовления</a>
+                                <a class="navbar-brand">Время</a>
                                 <div class="btn-group-toggle" data-toggle="buttons">
                                     <label for="vvfast" class="btn btn-light btn-ingredient mt-0">
-                                    Очень быстро! <input type="checkbox" name="vvfast">
+                                    Очень быстро <input type="checkbox" name="vvfast">
                                 </label>
                                     <label for="fast" class="btn btn-light btn-ingredient mt-0">
                                     Быстро <input type="checkbox" name="fast">
                                 </label>
                                     <label for="slow" class="btn btn-light btn-ingredient mt-0">
-                                    Медленно... <input type="checkbox" name="slow">
+                                    Медленно <input type="checkbox" name="slow">
                                 </label>
                                     <label for="vvslow" class="btn btn-light btn-ingredient mt-0">
-                                    Очень медленно! <input type="checkbox" name="vvslow">
+                                    Очень медленно <input type="checkbox" name="vvslow">
                                 </label>
                                 </div>
                                 <!-- /btn-group -->
@@ -172,7 +172,7 @@
                                         <li>Вода</li>
                                     </ul>
                                 </p>
-                                <a class="btn btn-outline-primary" href="#" role="button">
+                                <a class="btn btn-outline-secondary" href="#" role="button">
                                         Полный рецепт
                                     </a>
                             </div>
@@ -193,7 +193,7 @@
                                         <li>Вода</li>
                                     </ul>
                                 </p>
-                                <a class="btn btn-outline-primary" href="#" role="button">
+                                <a class="btn btn-outline-secondary" href="#" role="button">
                                         Полный рецепт
                                     </a>
                             </div>
@@ -206,7 +206,7 @@
                     <div class="col-12 col-md">
                         <form class="form mt-3 d-flex flex-column align-items-stretch">
                             <input class="form-control mr-2 mr-md-0" type="search" placeholder="Поиск по рецептам">
-                            <button class="btn btn-outline-success mt-1 pl-3 pr-3 mx-auto d-block" type="submit">
+                            <button class="button btn btn-primary mt-1 pl-3 pr-3 mx-auto d-block" type="submit">
                                     Найти
                                 </button>
                         </form>
