@@ -359,13 +359,13 @@ model</columns>
       <columns>session_key</columns>
       <primary>1</primary>
     </key>
-    <column id="87" parent="12" name="id">
-      <mandatory>1</mandatory>
-      <data-type>INTEGER(0,-1)|4</data-type>
-    </column>
-    <column id="88" parent="12" name="name">
+    <column id="87" parent="12" name="name">
       <mandatory>1</mandatory>
       <data-type>VARCHAR(150)(0,-1)|12</data-type>
+    </column>
+    <column id="88" parent="12" name="id">
+      <mandatory>1</mandatory>
+      <data-type>INTEGER(0,-1)|4</data-type>
     </column>
     <key id="89" parent="12">
       <columns>id</columns>
