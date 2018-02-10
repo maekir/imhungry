@@ -14,23 +14,21 @@ $yellow:  #ffc107;
 $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
+$white:   #fff;
+
 
 $theme-colors: (
-  primary: #EE2E31,
-  secondary: #1D7874,
+  primary: #82DAB4,
+  secondary: #966C67,
   success: #59C9A5,
-  info: $cyan,
+  info: #FF8978,
   warning: $yellow,
   danger: $red,
-  light: #F4C095,
-  dark: $gray-800
+  light: #FFEAEC,
+  dark: #B59490
 );
 
-$body-bg: white;
-
-$white: #F4F4F8;
-$purple: #6772e5;
-$light-purple: #7795f8;
+$body-bg: #FFFDFD;
 
 .button {
   margin: 10px;
