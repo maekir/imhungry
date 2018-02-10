@@ -16,17 +16,17 @@ $teal:    #20c997;
 $cyan:    #17a2b8;
 
 $theme-colors: (
-  primary: #3EAF7F,
-  secondary: rgba(139, 107, 94, 0.61),
-  success: #25CED1,
+  primary: #EE2E31,
+  secondary: #1D7874,
+  success: #59C9A5,
   info: $cyan,
   warning: $yellow,
   danger: $red,
-  light: $gray-100,
+  light: #F4C095,
   dark: $gray-800
 );
 
-$body-bg: #FCFFFC;
+$body-bg: white;
 
 $white: #F4F4F8;
 $purple: #6772e5;
