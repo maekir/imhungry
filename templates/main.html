@@ -59,23 +59,23 @@
                     Что у вас есть?
                 </h2>
 
+                <input type="text" id="ingredient_search" placeholder="Поиск">
                 <div class="d-flex justify-content-center">
+                    
                     <form action="#" method="post">
-
                         <!-- Форма поиска по ингредиентам и прочие фильтры -->
                         <div class="border border-light rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
-                            <div class="btn-group-toggle" data-toggle="buttons">
+                            <div class="btn-group-toggle" data-toggle="buttons" id="ingredient_buttons">
                                 {% for ingredient in ingredients %}
                                 <label for="{{ ingredient.id }}" class="btn btn-light m-1">
                                     {{ ingredient.name }}
                                     <input type="checkbox" name="ingredients" value="{{ ingredient.id }}">
-                                </label> {% endfor %}
+                                </label> 
+                                {% endfor %}
                             </div>
                             <!-- /btn-group -->
                         </div>
                         <!-- /border -->
-
-                        <!-- /d-flex -->
 
                         <!-- Дополнительные фильтры -->
                         <h2 class="display-4 mb-2">Дополнительно</h2>
@@ -229,6 +229,7 @@
         <script src="/static/js/jquery.min.js"></script>
         <script src="/static/js/popper.min.js"></script>
         <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/jq_main_page.js"></script>
     </div>
 </body>
 
