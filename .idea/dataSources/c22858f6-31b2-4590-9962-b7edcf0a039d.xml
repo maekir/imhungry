@@ -412,17 +412,20 @@ model</columns>
       <mandatory>1</mandatory>
       <data-type>INTEGER(0,-1)|4</data-type>
     </column>
-    <index id="99" parent="14" name="ladybugs_recipes_ingredients_recipes_id_ingredients_id_5af103b3_uniq">
+    <column id="99" parent="14" name="amount">
+      <data-type>VARCHAR(150)(0,-1)|12</data-type>
+    </column>
+    <index id="100" parent="14" name="ladybugs_recipes_ingredients_recipes_id_ingredients_id_5af103b3_uniq">
       <columns>recipes_id
 ingredients_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="100" parent="14">
+    <key id="101" parent="14">
       <columns>id</columns>
       <primary>1</primary>
     </key>
-    <foreign-key id="101" parent="14" name="#FAKE_ladybugs_recipes_ingredients_2">
+    <foreign-key id="102" parent="14" name="#FAKE_ladybugs_recipes_ingredients_2">
       <name-surrogate>1</name-surrogate>
       <columns>recipes_id</columns>
       <deferrable>1</deferrable>
@@ -431,7 +434,7 @@ ingredients_id</columns>
       <cascade-update-rule>no_action</cascade-update-rule>
       <cascade-delete-rule>no_action</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="102" parent="14" name="#FAKE_ladybugs_recipes_ingredients_1">
+    <foreign-key id="103" parent="14" name="#FAKE_ladybugs_recipes_ingredients_1">
       <name-surrogate>1</name-surrogate>
       <columns>ingredients_id</columns>
       <deferrable>1</deferrable>
@@ -440,10 +443,10 @@ ingredients_id</columns>
       <cascade-update-rule>no_action</cascade-update-rule>
       <cascade-delete-rule>no_action</cascade-delete-rule>
     </foreign-key>
-    <column id="103" parent="15" name="name">
+    <column id="104" parent="15" name="name">
       <data-type>(0,-1)|12</data-type>
     </column>
-    <column id="104" parent="15" name="seq">
+    <column id="105" parent="15" name="seq">
       <data-type>(0,-1)|12</data-type>
     </column>
   </database-model>

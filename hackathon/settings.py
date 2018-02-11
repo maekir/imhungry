@@ -28,7 +28,10 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = ['static']
 
 
-LOGIN_REDIRECT_URL = '/'  # возвращение на главную после авторизации
+# возвращение на главную после авторизации и регистрации
+LOGIN_REDIRECT_URL = '/'
+REGISTER_REDIRECT_URL = '/'
+
 
 ALLOWED_HOSTS = []
 

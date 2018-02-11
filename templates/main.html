@@ -28,20 +28,20 @@
         </button>
             <div class="collapse navbar-collapse" id="navbar-content">
                 <div class="navbar-nav ml-auto">
-
+                    {% if name %}
+                    <!-- Выход - только если пользователь авторизован -->
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href=".logout" role="button">
+                    Выход
+                    </a>
+                    {% else %}
                     <!-- Регистрация и вход - пользователь не авторизован -->
                     <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./register" role="button">
                     Регистрация
-                </a>
+                    </a>
                     <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./login" role="button">
                     Вход
-                </a>
-
-                    <!-- Выход - только если пользователь авторизован -->
-                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="#" role="button">
-                    Выход
-                </a>
-
+                    </a>
+                    {% endif %}
                 </div>
                 <!-- /navbar-nav -->
             </div>
@@ -59,11 +59,12 @@
                     Что у вас есть?
                 </h2>
 
+                <!-- Фильтр по ингредиентам -->
                 <input type="text" id="ingredient_search" placeholder="Поиск">
+
                 <div class="d-flex justify-content-center">
-                    
-                    <form action="#" method="post">
-                        <!-- Форма поиска по ингредиентам и прочие фильтры -->
+                    <!-- Форма поиска по ингредиентам и прочим параметрам -->
+                    <form action="#" method="POST">
                         <div class="border border-light rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
                             <div class="btn-group-toggle" data-toggle="buttons" id="ingredient_buttons">
                                 {% for ingredient in ingredients %}
@@ -87,10 +88,10 @@
                                     Легко <input type="checkbox" name="easy">
                                 </label>
                                     <label for="meddif" class="btn btn-light btn-ingredient mt-0">
-                                    Средне... <input type="checkbox" name="meddif">
+                                    Средне <input type="checkbox" name="meddif">
                                 </label>
                                     <label for="difficult" class="btn btn-light btn-ingredient mt-0">
-                                    Сложно! <input type="checkbox" name="difficult">
+                                    Сложно <input type="checkbox" name="difficult">
                                 </label>
                                 </div>
                                 <!-- /btn-group -->
@@ -98,6 +99,7 @@
                             <!-- /navbar -->
                         </div>
                         <!-- /border -->
+
                         <div class="border border-light rounded mt-2">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Приём</a>
@@ -120,6 +122,7 @@
                             <!-- /navbar -->
                         </div>
                         <!-- /border -->
+
                         <div class="border border-light rounded mt-2">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Время</a>
@@ -142,6 +145,7 @@
                             <!-- /navbar -->
                         </div>
                         <!-- /border -->
+
                         <div>
                             {# проверка вывода рецептов #} {% csrf_token %}
                             <h2> {{ recipes }} </h2>
@@ -150,12 +154,15 @@
                         <div class="d-flex justify-content-center mt-2">
                             <input class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-2 pl-3 pr-3" type="submit" value="Что можно приготовить?">
                         </div>
+                        <!-- /d-flex -->
                     </form>
+                    <!-- /Форма поиска по ингредиентам и прочим параметрам -->
                 </div>
                 <!-- /d-flex -->
             </div>
             <!-- /col-md-9 -->
-            <!-- Навигация и доп. ссылки -->
+
+            <!-- Боковая панель -->
             <div class="col-12 col-md-3 mt-4 mt-md-0">
                 <div class="row">
                     <div class="col col-md-12">
@@ -216,7 +223,7 @@
                 <!-- /row -->
 
             </div>
-            <!-- /Навигация и доп. ссылки -->
+            <!-- /Боковая панель-->
         </div>
         <!-- /container -->
 
