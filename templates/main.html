@@ -18,7 +18,7 @@
     <div class="header-navbar__cover pb-1 rounded-bottom">
     <header class="text-center pt-2">
         <img class="logo-image" src="/static/assets/heart.svg" alt="sohungry">
-        <h1 class="display-1 mb-4 p-0">Что приготовить?</h1>
+        <h1 class="display-1 mb-4 p-0 d-none d-md-block">Что приготовить?</h1>
     </header>
 
     <!-- Навигационная панель -->
@@ -30,6 +30,9 @@
             <div class="collapse navbar-collapse" id="navbar-content">
                 <div class="navbar-nav ml-auto">
                     {% if name %}
+                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0" href="/userpage" role="button">
+                    Личный кабинет
+                    </a>
                     <!-- Выход - только если пользователь авторизован -->
                     <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="/logout" role="button">
                     Выход
@@ -58,10 +61,6 @@
         <div class="row">
             <!-- Фильтры поиска -->
             <div class="col-md-9">
-                <h2 class="display-4 text-center">
-                    Что у вас есть?
-                </h2>
-
                 <!-- Фильтр по ингредиентам -->
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -71,17 +70,18 @@
                 </div>
 
                 <div class="alert alert-primary alert-dismissible fade show mt-1 pb-0" role="alert">
-                    <p>Вводите и выбирайте названия ингредиентов по одному.</p>
+                    <h4>Выберите ингредиенты, которые у Вас есть</h4>
+                    <p>Для этого введите название ингредиента и выберите его, нажав. Для отмены выбора, нажмите ещё раз.</p>
+                    <p>Проделайте действия выше для всех ингредиентов, которые у Вас есть.</p>
                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                   
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column justify-content-center">
                     <!-- Форма поиска по ингредиентам и прочим параметрам -->
                     <form action="#" method="post">
-                        <div class="border border-light rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
                             <div class="btn-group-toggle" data-toggle="buttons" id="ingredient_buttons">
                                 {% for ingredient in ingredients %}
                                 <label for="{{ ingredient.id }}" class="btn btn-light m-1">
@@ -91,12 +91,15 @@
                                 {% endfor %}
                             </div>
                             <!-- /btn-group -->
-                        </div>
-                        <!-- /border -->
+                        
+                        <div class="alert alert-primary alert-dismissible fade show mt-1 pb-0" role="alert">
+                                <p>Уточните поиск, воспользовавшись дополнительными фильтрами ниже.</p>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
 
                         <!-- Дополнительные фильтры -->
-                        <h2 class="display-4 mb-2 text-center">Дополнительно</h2>
-                        <div class="border border-light rounded">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Сложность</a>
                                 <div class="btn-group-toggle" data-toggle="buttons">
@@ -113,10 +116,7 @@
                                 <!-- /btn-group -->
                             </div>
                             <!-- /navbar -->
-                        </div>
-                        <!-- /border -->
 
-                        <div class="border border-light rounded mt-2">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Приём</a>
                                 <div class="btn-group-toggle" data-toggle="buttons">
@@ -136,10 +136,7 @@
                                 <!-- /btn-group -->
                             </div>
                             <!-- /navbar -->
-                        </div>
-                        <!-- /border -->
 
-                        <div class="border border-light rounded mt-2">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Время</a>
                                 <div class="btn-group-toggle" data-toggle="buttons">
@@ -159,8 +156,6 @@
                                 <!-- /btn-group -->
                             </div>
                             <!-- /navbar -->
-                        </div>
-                        <!-- /border -->
 
                         <div class="d-flex justify-content-center mt-2">
                             <input class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-2 pl-3 pr-3" type="submit" value="Что можно приготовить?">

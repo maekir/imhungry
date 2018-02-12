@@ -46,11 +46,16 @@ def login_page(request):
 
 def user_page(request):
     username = get_user(request).get_username()
-    fullname = get_user(request).get_full_name()
+    # проверяем, юзер аноним или нет
+    if username != '':
+        fullname = get_user(request).get_full_name()
+    else:
+        fullname = None
     #info = CustomUser.user_info
     return render(request, 'userpage.html', {"username":  username, "fullname": fullname})
 
 def edit_password(request):
+    username = get_user(request).get_username()
     if request.method == 'POST':
         form = PasswordChangeForm(request.user, request.POST)
         if form.is_valid():
@@ -62,9 +67,10 @@ def edit_password(request):
             messages.error(request, 'Исправьте ошибки!')
     else:
         form = PasswordChangeForm(request.user)
-    return render(request, 'edit_password.html', {'form': form})
+    return render(request, 'edit_password.html', {'form': form, 'username': username})
 
 def user_edit_view(request):
+    username = get_user(request).get_username()
     if request.method == "POST":
         form = UserEditForm(request.POST)
         if form.is_valid():
@@ -83,4 +89,4 @@ def user_edit_view(request):
             messages.error(request, 'Исправьте ошибки!')
     else:
         form = UserEditForm()
-    return render(request, 'edit_user.html', {'form': form})
+    return render(request, 'edit_user.html', {'form': form, 'username': username})

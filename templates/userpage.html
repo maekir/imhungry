@@ -2,12 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Личный кабинет</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <link rel="stylesheet" href="/static/css/home-styles.css">
+
+    {% if username %}
+    <title>Личный кабинет {{ username }}</title>
+    {% else %}
+    <title> 404 </title>
+    {% endif %}
 </head>
 <body>
-Проголодались, {{ username}}?
-<br> Ваше имя: {{ fullname }}
-<br><a href="edit_password.html">Изменить пароль</a>
-<br><a href="edit_user.html">Редактировать профиль</a>
+    <!-- если пользователь авторизован -->
+    {% if username %}
+    <div class="header-navbar__cover pb-1 rounded-bottom">
+        <header class="text-center pt-2">
+            <img class="logo-image" src="/static/assets/heart.svg" alt="sohungry">
+            <h1 class="display-3 mb-4 p-0 d-none d-md-block">Проголодались, {{ username}}?</h1>
+        </header>
+    </div>
+    <p><strong>Ваше имя: </strong>{{ fullname }}</p>
+    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0" href="edit_password.html" role="button">
+        Изменить пароль
+    </a>
+    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="edit_user.html" role="button">
+        Редактировать профиль
+    </a>
+
+    <!-- если пользователь не авторизован -->
+    {% else %}
+        <h1>фу, кыш, низя</h1>
+    {% endif %}
+
+    <!-- Скрипты bootstrap -->
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>    
 </body>
 </html>
