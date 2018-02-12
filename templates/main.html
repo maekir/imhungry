@@ -15,13 +15,14 @@
 
 <body>
     <!-- Logo and page header -->
-    <header class="text-center">
+    <div class="header-navbar__cover pb-1 rounded-bottom">
+    <header class="text-center pt-2">
         <img class="logo-image" src="/static/assets/heart.svg" alt="sohungry">
-        <h1 class="display-1">Что приготовить?</h1>
+        <h1 class="display-1 mb-4 p-0">Что приготовить?</h1>
     </header>
 
     <!-- Навигационная панель -->
-    <div class="container-fluid">
+    <div class="container-fluid mb-1">
         <nav class="navbar navbar-expand-lg p-0">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
             <img src="/static/assets/menu.svg" alt="Меню">
@@ -30,15 +31,15 @@
                 <div class="navbar-nav ml-auto">
                     {% if name %}
                     <!-- Выход - только если пользователь авторизован -->
-                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./logout" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./logout" role="button">
                     Выход
                     </a>
                     {% else %}
                     <!-- Регистрация и вход - пользователь не авторизован -->
-                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./register" role="button">
+                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./register" role="button">
                     Регистрация
                     </a>
-                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./login" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./login" role="button">
                     Вход
                     </a>
                     {% endif %}
@@ -49,13 +50,15 @@
         </nav>
     </div>
     <!-- /container-fluid -->
-    
+    </div>
+    <!-- /header-navbar__cover -->
+
     <!-- Основной контент страницы -->
-    <div class="container-fluid mt-4">
+    <div class="container-fluid mt-4 m-0 p-0">
         <div class="row">
             <!-- Фильтры поиска -->
             <div class="col-md-9">
-                <h2 class="display-4">
+                <h2 class="display-4 text-center">
                     Что у вас есть?
                 </h2>
 
@@ -92,7 +95,7 @@
                         <!-- /border -->
 
                         <!-- Дополнительные фильтры -->
-                        <h2 class="display-4 mb-2">Дополнительно</h2>
+                        <h2 class="display-4 mb-2 text-center">Дополнительно</h2>
                         <div class="border border-light rounded">
                             <div class="navbar justify-content-between">
                                 <a class="navbar-brand">Сложность</a>
@@ -240,10 +243,13 @@
         <!-- /container -->
 
         <!-- Footer -->
+        <div class="footer__cover rounded-top">
         <footer class="container-fluid mt-4">
-            <p class="text-right">@ladybugs 2018</p>
+            <p class="text-right pb-0 mb-0">ladybugs 2018</p>
         </footer>
+        </div>
     </div>
+    <!-- /Основной контент страницы -->
 
     
     <!-- Скрипты js -->
