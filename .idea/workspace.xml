@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="904fa31b-9930-440f-97f8-390d68d4aa44" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c22858f6-31b2-4590-9962-b7edcf0a039d.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/c22858f6-31b2-4590-9962-b7edcf0a039d.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/hackathon.iml" afterPath="$PROJECT_DIR$/.idea/hackathon.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/hackathon/settings.py" afterPath="$PROJECT_DIR$/hackathon/settings.py" />
-      <change beforePath="$PROJECT_DIR$/hackathon/urls.py" afterPath="$PROJECT_DIR$/hackathon/urls.py" />
-      <change beforePath="$PROJECT_DIR$/hackathon/wsgi.py" afterPath="$PROJECT_DIR$/hackathon/wsgi.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/admin.py" afterPath="$PROJECT_DIR$/ladybugs/admin.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/apps.py" afterPath="$PROJECT_DIR$/ladybugs/apps.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/forms.py" afterPath="$PROJECT_DIR$/ladybugs/forms.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/ladybugs/migrations/0001_initial.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/migrations/0002_recipes_user_id.py" afterPath="$PROJECT_DIR$/ladybugs/migrations/0002_recipes_user_id.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/migrations/0003_auto_20180208_1539.py" afterPath="$PROJECT_DIR$/ladybugs/migrations/0003_auto_20180208_1539.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/migrations/0004_auto_20180209_1151.py" afterPath="$PROJECT_DIR$/ladybugs/migrations/0004_auto_20180209_1151.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/migrations/0005_customuser_post.py" afterPath="$PROJECT_DIR$/ladybugs/migrations/0005_customuser_post.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/models.py" afterPath="$PROJECT_DIR$/ladybugs/models.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/tests.py" afterPath="$PROJECT_DIR$/ladybugs/tests.py" />
-      <change beforePath="$PROJECT_DIR$/ladybugs/views.py" afterPath="$PROJECT_DIR$/ladybugs/views.py" />
-      <change beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change beforePath="$PROJECT_DIR$/templates/feed.html" afterPath="$PROJECT_DIR$/templates/feed.html" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" afterPath="$PROJECT_DIR$/templates/main.html" />
-      <change beforePath="$PROJECT_DIR$/templates/recipe.html" afterPath="$PROJECT_DIR$/templates/recipe.html" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" afterPath="$PROJECT_DIR$/templates/register.html" />
-      <change beforePath="$PROJECT_DIR$/templates/userpage.html" afterPath="$PROJECT_DIR$/templates/userpage.html" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,12 +37,6 @@
         <item name="db" type="feb32156:DbDataSourceImpl" />
         <item name="#1: schema" type="90513b60:SqliteImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db" type="feb32156:DbDataSourceImpl" />
-        <item name="#1: schema" type="90513b60:SqliteImplModel$Schema" />
-        <item name="ladybugs_ingredients: table" type="ffe0bd85:SqliteImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -81,28 +48,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5502">
-              <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ladybugs/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="auth_user" pinned="false" current-in-tab="false">
+      <file leaf-file-name="auth_user" pinned="false" current-in-tab="true">
         <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="auth_user_user_permissions" pinned="false" current-in-tab="false">
+        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user_user_permissions">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -119,8 +75,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="django_content_type" pinned="false" current-in-tab="false">
-        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/django_content_type">
+      <file leaf-file-name="auth_user_groups" pinned="false" current-in-tab="false">
+        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user_groups">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -128,8 +84,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ladybugs_ingredients" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ladybugs_ingredients" pinned="false" current-in-tab="false">
         <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_ingredients">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ladybugs_recipes_ingredients" pinned="false" current-in-tab="false">
+        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -139,6 +104,33 @@
       </file>
       <file leaf-file-name="django_session" pinned="false" current-in-tab="false">
         <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/django_session">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="django_migrations" pinned="false" current-in-tab="false">
+        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/django_migrations">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ladybugs_recipes" pinned="false" current-in-tab="false">
+        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sqlite_sequence" pinned="false" current-in-tab="false">
+        <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/sqlite_sequence">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -211,7 +203,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -223,7 +215,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -583,20 +575,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.49713877" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3736413" sideWeight="0.5171674" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37483445" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980132" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45298013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37483445" sideWeight="0.4828326" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2807947" sideWeight="0.49713877" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22433193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25597748" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25527427" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -630,12 +623,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
-    <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
-    <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
-    <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
-    <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes" />
-    <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes" />
     <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
     <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
     <entry file="dbDummy://dbtable:/db04f50a/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients" />
@@ -691,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="29" lean-forward="false" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +692,7 @@
     <entry file="file://$PROJECT_DIR$/templates/recipe.html" />
     <entry file="file://$PROJECT_DIR$/templates/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5502">
+        <state relative-caret-position="4935">
           <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
           <folding />
         </state>
@@ -716,9 +701,16 @@
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/contrib/auth/__init__.py" />
     <entry file="file://$PROJECT_DIR$/ladybugs/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
+        <state relative-caret-position="567">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/django_content_type">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -729,7 +721,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user">
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/sqlite_sequence">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/django_migrations">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user_groups">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_recipes_ingredients">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_ingredients">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
@@ -743,14 +770,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/django_content_type">
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user_user_permissions">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/ladybugs_ingredients">
+    <entry file="das://table:/1607eeaf/c22858f6-31b2-4590-9962-b7edcf0a039d/auth_user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
