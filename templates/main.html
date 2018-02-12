@@ -31,15 +31,15 @@
                 <div class="navbar-nav ml-auto">
                     {% if name %}
                     <!-- Выход - только если пользователь авторизован -->
-                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./logout" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="/logout" role="button">
                     Выход
                     </a>
                     {% else %}
                     <!-- Регистрация и вход - пользователь не авторизован -->
-                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./register" role="button">
+                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0" href="/register" role="button">
                     Регистрация
                     </a>
-                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="./login" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0" href="/login" role="button">
                     Вход
                     </a>
                     {% endif %}
@@ -82,7 +82,7 @@
                     <!-- Форма поиска по ингредиентам и прочим параметрам -->
                     <form action="#" method="POST">
                         <div class="border border-light rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
-                            <div class="btn-group-toggle" data-toggle="buttons" id="ingredient_buttons">
+                            <div class="btn-group-toggle" data-toggle="buttons" >
                                 {% for ingredient in ingredients %}
                                 <label for="{{ ingredient.id }}" class="btn btn-light m-1">
                                     {{ ingredient.name }}
