@@ -69,7 +69,7 @@
                     <input class="mr-auto form-control p-3" type="text" id="ingredient_search" placeholder="Поиск по ингредиентам" aria-label="Поиск по ингредиентам" aria-describedby="btnSearchIng">
                 </div>
 
-                <div class="alert alert-primary alert-dismissible fade show mt-1 pb-0" role="alert">
+                <div class="alert alert-primary alert-dismissible fade show mt-2 mb-0 pb-0" role="alert">
                     <h4>Выберите ингредиенты, которые у Вас есть</h4>
                     <p>Для этого введите название ингредиента и выберите его, нажав. Для отмены выбора, нажмите ещё раз.</p>
                     <p>Проделайте действия выше для всех ингредиентов, которые у Вас есть.</p>
@@ -82,22 +82,22 @@
                 <div class="d-flex flex-column justify-content-center">
                     <!-- Форма поиска по ингредиентам и прочим параметрам -->
                     <form action="#" method="post">
-                            <div class="btn-group-toggle" data-toggle="buttons" id="ingredient_buttons">
-                                {% for ingredient in ingredients %}
-                                <label for="{{ ingredient.id }}" class="btn btn-light m-1">
-                                    {{ ingredient.name }}
-                                    <input type="checkbox" name="ingredients" value="{{ ingredient.id }}">
-                                </label> 
-                                {% endfor %}
-                            </div>
-                            <!-- /btn-group -->
+                        <div class="btn-group-toggle mt-2" data-toggle="buttons" id="ingredient_buttons">
+                            {% for ingredient in ingredients %}
+                            <label for="{{ ingredient.id }}" class="btn btn-light m-1">
+                                {{ ingredient.name }}
+                                <input type="checkbox" name="ingredients" value="{{ ingredient.id }}">
+                            </label> 
+                            {% endfor %}
+                        </div>
+                        <!-- /btn-group -->
                         
-                        <div class="alert alert-primary alert-dismissible fade show mt-1 pb-0" role="alert">
-                                <p>Уточните поиск, воспользовавшись дополнительными фильтрами ниже.</p>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                  <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
+                        <div class="alert alert-primary alert-dismissible fade show mt-2 pb-0" role="alert">
+                            <p>Уточните поиск, воспользовавшись дополнительными фильтрами ниже.</p>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
 
                         <!-- Дополнительные фильтры -->
                             <div class="navbar justify-content-between">
