@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/home-styles.css">
 
@@ -30,7 +30,7 @@
                 <div class="navbar-nav ml-auto">
                     {% if name %}
                     <!-- Выход - только если пользователь авторизован -->
-                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href=".logout" role="button">
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./logout" role="button">
                     Выход
                     </a>
                     {% else %}
@@ -60,7 +60,20 @@
                 </h2>
 
                 <!-- Фильтр по ингредиентам -->
-                <input type="text" id="ingredient_search" placeholder="Поиск">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text" id="btnSearchIng"><i class="fas fa-search"></i></div>
+                    </div>
+                    <input class="mr-auto form-control" type="text" id="ingredient_search" placeholder="Поиск по ингредиентам" aria-label="Поиск по ингредиентам" aria-describedby="btnSearchIng">
+                </div>
+
+                <div class="alert alert-primary alert-dismissible fade show mt-1 pb-0" role="alert">
+                    <p>Вводите и выбирайте названия ингредиентов по одному.</p>
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                  
 
                 <div class="d-flex justify-content-center">
                     <!-- Форма поиска по ингредиентам и прочим параметрам -->
@@ -146,15 +159,14 @@
                         </div>
                         <!-- /border -->
 
-                        <div>
-                            {# проверка вывода рецептов #} {% csrf_token %}
-                            <h2> {{ recipes }} </h2>
-                        </div>
-
                         <div class="d-flex justify-content-center mt-2">
                             <input class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-2 pl-3 pr-3" type="submit" value="Что можно приготовить?">
                         </div>
                         <!-- /d-flex -->
+                        <div>
+                            {# проверка вывода рецептов #} {% csrf_token %}
+                            <h2> {{ recipes }} </h2>
+                        </div>
                     </form>
                     <!-- /Форма поиска по ингредиентам и прочим параметрам -->
                 </div>
@@ -168,7 +180,7 @@
                     <div class="col col-md-12">
 
                         <!-- Случайные рецепты -->
-                        <div class="card mb-2 mb-md-0">
+                        <div class="card mb-2">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Чай</h5>
                                 <p>Вам понадобится:</p>
@@ -189,7 +201,7 @@
                     </div>
                     <!-- /col -->
                     <div class="col col-md-12">
-                        <div class="card mt-md-2 mb-md-3">
+                        <div class="card mb-2">
                             <div class="card-body text-center">
                                 <h5 class="card-title">Макароны</h5>
                                 <p>Вам понадобится:</p>
@@ -211,8 +223,8 @@
                     </div>
                     <!-- /col -->
                     <div class="col-12 col-md">
-                        <form class="form mt-3 d-flex flex-column align-items-stretch">
-                            <input class="form-control mr-2 mr-md-0" type="search" placeholder="Поиск по рецептам">
+                        <form class="form mt-1 d-flex flex-column align-items-stretch">
+                            <input class="form-control pr-md-auto pl-md-auto" type="search" placeholder="Поиск по рецептам">
                             <button class="button btn btn-primary mt-1 pl-3 pr-3 mx-auto d-block" type="submit">
                                     Найти
                                 </button>
