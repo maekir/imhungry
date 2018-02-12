@@ -80,9 +80,9 @@
 
                 <div class="d-flex justify-content-center">
                     <!-- Форма поиска по ингредиентам и прочим параметрам -->
-                    <form action="#" method="POST">
+                    <form action="#" method="post">
                         <div class="border border-light rounded mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
-                            <div class="btn-group-toggle" data-toggle="buttons" >
+                            <div class="btn-group-toggle" data-toggle="buttons" id="ingredient_buttons">
                                 {% for ingredient in ingredients %}
                                 <label for="{{ ingredient.id }}" class="btn btn-light m-1">
                                     {{ ingredient.name }}
