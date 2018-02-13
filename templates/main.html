@@ -82,7 +82,7 @@
                 <div class="d-flex flex-column justify-content-center">
                     <!-- Форма поиска по ингредиентам и прочим параметрам -->
                     <form action="#" method="post">
-                        <div class="btn-group-toggle mt-2" data-toggle="buttons" id="ingredient_buttons">
+                        <div class="ingredient_buttons btn-group-toggle mt-2" data-toggle="buttons">
                             {% for ingredient in ingredients %}
                             <label for="{{ ingredient.id }}" class="btn btn-light m-1">
                                 {{ ingredient.name }}
