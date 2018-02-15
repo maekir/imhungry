@@ -1,0 +1,68 @@
+// Variable Overrides
+
+$gray-100: rgb(253, 249, 246);
+$gray-600: #868e96;
+$gray-800: #343a40;
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$theme-colors: (
+  primary: #3EAF7F,
+  secondary: rgba(139, 107, 94, 0.61),
+  success: #25CED1,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800
+);
+
+$body-bg: #FCFFFC;
+
+$white: #F4F4F8;
+$purple: #6772e5;
+$light-purple: #7795f8;
+
+.button {
+  margin: 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .15s ease;
+  cursor: pointer;
+  color: $white !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+  
+  &--inverse {
+    @extend .button;
+    color: $white;
+    
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+
+// Bootstrap Sass Imports
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
