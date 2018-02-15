@@ -15,14 +15,37 @@ class Ingredients(models.Model):
 
 
 class Recipes(models.Model):
-    ingredients = models.ManyToManyField('Ingredients', max_length=150, )
+    ingredients = models.ManyToManyField('Ingredients', max_length=150, through='RecipesInside', through_fields=('recipe','ingredient'))
     title = models.CharField(max_length=150)
     value = models.CharField(max_length=150)
+    complexity = models.IntegerField(choices=(
+        (1,'Легко'),
+        (2,'Средне'),
+        (3,'Сложно'),
+    ),default=2)
+    speed = models.IntegerField(choices=(
+        (1,'Очень медленно'),
+        (2,'Медленно'),
+        (3,'Быстро'),
+        (4,'Очень быстро'),
+    ),default=3)
+    meal_time = models.IntegerField(choices=(
+        (0,'Перекус'),
+        (1,'Завтрак'),
+        (2,'Обед'),
+        (3,'Ужин'),
+    ),default=0)
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE, max_length=50,
                              default=User.objects.get(username='admin').id)
 
     def __str__(self):
         return self.title
+
+class RecipesInside(models.Model):
+    recipe = models.ForeignKey(Recipes,on_delete=models.CASCADE)
+    ingredient = models.ForeignKey(Ingredients,on_delete=models.CASCADE)
+    amount = models.CharField(max_length=64)
+
 
 
 class Post(models.Model):
