@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/home-styles.css">
+    <title>Что приготовить?</title>
+</head>
+
+
+<body>
+    <!-- Logo and page header -->
+    <header class="text-center">
+        <img class="logo-image" src="./assets/heart.svg" alt="sohungry">
+        <h1 class="display-1">Что приготовить?</h1>
+    </header>
+
+    <!-- Навигационная панель -->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+                <img src="./assets/menu.svg" alt="Меню">
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <div class="navbar-nav ml-auto">
+
+                    <!-- Регистрация и вход - пользователь не авторизован -->
+                    <a class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./register.html" role="button">
+                        Регистрация
+                    </a>
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./signin.html" role="button">
+                        Вход
+                    </a>
+
+                    <!-- Выход - только если пользователь авторизован -->
+                    <a class="button btn btn-secondary ml-0 ml-lg-2 mt-1 mt-lg-0 pl-3 pr-3" href="./signin.html" role="button">
+                        Выход
+                    </a>
+
+                </div>
+                <!-- /navbar-nav -->
+            </div>
+            <!-- /collapse -->
+        </nav>
+    </div>
+    <!-- /container-fluid -->
+
+    <!-- Основной контент страницы -->
+    <div class="container-fluid mt-4">
+        <div class="row">
+            <!-- Фильтры поиска -->
+            <div class="col-md-9">
+                <h2 class="display-4">
+                    Что у вас есть?
+                </h2>
+                <div class="row">
+                    <div class="col d-flex justify-content-center">
+                        <form action="#" method="post">
+                            <!-- Форма поиска по ингредиентам и прочие фильтры -->
+
+                            <div class="border rounded border-light mt-2 mb-4 pt-2 pb-2 pr-3 pl-3">
+                                <div class="btn-group-toggle" data-toggle="buttons">
+                                    <!-- Ингредиенты -->
+                                <label for="eggs" class="btn btn-outline-info m-1">
+                                    Яйца
+                                    <input type="checkbox" name="eggs">
+                                </label>
+                                   <label for="milk" class="btn btn-outline-info m-1">
+                                    Молоко
+                                    <input type="checkbox" name="milk">
+                                </label>
+                                </div>
+                                <!-- /btn-group -->
+                            </div>
+                            <!-- /border -->
+                    </div>
+                    <!-- /col -->
+                </div>
+
+                <!-- Дополнительные фильтры -->
+                <h2 class="display-4 mb-2">Дополнительно</h2>
+                <div class="border rounded">
+                    <div class="navbar justify-content-between">
+                        <a class="navbar-brand">Сложность</a>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label for="easy" class="btn btn-outline-dark mt-0">
+                                    Легко <input type="checkbox" name="easy">
+                                </label>
+                            <label for="meddif" class="btn btn-outline-dark mt-0">
+                                    Средне... <input type="checkbox" name="meddif">
+                                </label>
+                            <label for="difficult" class="btn btn-outline-dark mt-0">
+                                    Сложно! <input type="checkbox" name="difficult">
+                                </label>
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /navbar -->
+                </div>
+                <!-- /border -->
+                <div class="border rounded mt-2">
+                    <div class="navbar justify-content-between">
+                        <a class="navbar-brand">Приём пищи</a>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label for="breakfast" class="btn btn-outline-dark mt-0">
+                                        Завтрак <input type="checkbox" name="breakfast">
+                                    </label>
+                            <label for="dinner" class="btn btn-outline-dark mt-0">
+                                        Обед <input type="checkbox" name="dinner">
+                                    </label>
+                            <label for="supper" class="btn btn-outline-dark mt-0">
+                                        Ужин <input type="checkbox" name="supper">
+                                    </label>
+                            <label for="snack" class="btn btn-outline-dark mt-0">
+                                        Перекус <input type="checkbox" name="snack">
+                                    </label>
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /navbar -->
+                </div>
+                <!-- /border -->
+                <div class="border rounded mt-2">
+                    <div class="navbar justify-content-between">
+                        <a class="navbar-brand">Время готовки</a>
+                        <div class="btn-group-toggle" data-toggle="buttons">
+                            <label for="vvfast" class="btn btn-outline-dark mt-0">
+                                    Очень быстро<input type="checkbox" name="vvfast">
+                                </label>
+                            <label for="fast" class="btn btn-outline-dark mt-0">
+                                    Быстро<input type="checkbox" name="fast">
+                                </label>
+                            <label for="slow" class="btn btn-outline-dark mt-0">
+                                    Медленно<input type="checkbox" name="slow">
+                                </label>
+                            <label for="vvslow" class="btn btn-outline-dark mt-0">
+                                    Очень медленно<input type="checkbox" name="vvslow">
+                                </label>
+                        </div>
+                        <!-- /btn-group -->
+                    </div>
+                    <!-- /navbar -->
+                </div>
+                <!-- /border -->
+                <div class="d-flex justify-content-center mt-2">
+                    <input class="button btn btn-primary ml-0 ml-lg-2 mt-1 mt-lg-2 pl-3 pr-3" type="submit" value="Что можно приготовить?">
+                </div>
+                </form>
+            </div>
+            <!-- /col -->
+
+
+            <!-- Навигация и доп. ссылки -->
+            <div class="col-12 col-md-3 mt-4 mt-md-0">
+                <div class="row">
+                    <div class="col col-md-12">
+
+                        <!-- Случайные рецепты -->
+                        <div class="card mb-2 mb-md-0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Чай</h5>
+                                <p>Вам понадобится:</p>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Пакетик чая</li>
+                                        <li>Сахар</li>
+                                        <li>Вода</li>
+                                    </ul>
+                                </p>
+                                <a class="btn btn-outline-info" href="#" role="button">
+                                    Полный рецепт
+                                </a>
+                            </div>
+                            <!-- /card-body -->
+                        </div>
+                        <!-- /card -->
+                    </div>
+                    <!-- /col -->
+                    <div class="col col-md-12">
+                        <div class="card mt-md-2 mb-md-3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Макароны</h5>
+                                <p>Вам понадобится:</p>
+                                <p class="card-text">
+                                    <ul>
+                                        <li>Макароны</li>
+                                        <li>Соль</li>
+                                        <li>Вода</li>
+                                    </ul>
+                                </p>
+                                <a class="btn btn-outline-info" href="#" role="button">
+                                    Полный рецепт
+                                </a>
+                            </div>
+                            <!-- /card-body -->
+                        </div>
+                        <!-- /card -->
+
+                    </div>
+                    <!-- /col -->
+                    <div class="col-12 col-md">
+                        <form class="form mt-3 d-flex flex-column align-items-stretch">
+                            <input class="form-control mr-2 mr-md-0" type="search" placeholder="Поиск по рецептам">
+                            <button class="button btn btn-primary mt-2 pl-3 pr-3 mx-auto d-block" type="submit">Найти</button>
+                        </form>
+                    </div>
+                    <!-- /col -->
+                </div>
+                <!-- /row -->
+
+            </div>
+            <!-- /Навигация и доп. ссылки -->
+        </div>
+        <!-- /container -->
+
+        <!-- Footer -->
+        <footer class="container-fluid mt-4">
+            <p class="text-right">@ladybugs 2018</p>
+        </footer>
+
+        <!-- Скрипты -->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/popper.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+// Variable Overrides
+
+$gray-100: rgb(253, 249, 246);
+$gray-600: #868e96;
+$gray-800: #343a40;
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+$white:   #fff;
+
+
+$theme-colors: (
+  primary: #82DAB4,
+  secondary: #966C67,
+  success: #59C9A5,
+  info: #FF8978,
+  warning: $yellow,
+  danger: $red,
+  light: #FFEAEC,
+  dark: #B59490
+);
+
+$body-bg: #FFFDFD;
+
+.button {
+  margin: 10px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all .15s ease;
+  cursor: pointer;
+  color: $white !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.20);
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  }
+  
+  &--inverse {
+    @extend .button;
+    color: $white;
+    
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+
+// Bootstrap Sass Imports
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
