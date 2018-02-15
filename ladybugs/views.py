@@ -13,40 +13,54 @@ from ladybugs.models import CustomUser
 
 
 def main_page(request):
+    random_recipes = Recipes.objects.order_by('?')
+    random_recipes = random_recipes[:2]
+    print(random_recipes)
     if request.method == 'POST':
-        # вывод тех рецептов, которые подходят по продуктам
-        post = dict(request.POST)
-        print(post)
-        try:
-            ing_ids = [int(i) for i in post['ingredients']]
-        except KeyError:
-            return redirect('/')
-        recipes = Recipes.objects.exclude(ingredients__id__in=Ingredients.objects.exclude(id__in=ing_ids).values_list('id',flat=True))
+        which_act = request.GET["act"]
+        if which_act == "1":
+            post = dict(request.POST)
+            try:
+                ing_ids = [int(i) for i in post['ingredients']]
+            except KeyError:
+                return redirect('/')
+            recipes = Recipes.objects.exclude(ingredients__id__in=Ingredients.objects.exclude(id__in=ing_ids).values_list('id',flat=True))
 
-        try:
-            comp = [int(i) for i in post['comp']]
-            recipes = recipes.filter(complexity__in=comp)
-        except:
-            pass
+            try:
+                comp = [int(i) for i in post['comp']]
+                recipes = recipes.filter(complexity__in=comp)
+            except:
+                pass
 
-        try:
-            meal = [int(i) for i in post['meal']]
-            recipes = recipes.filter(meal_time__in=meal)
-        except:
-            pass
+            try:
+                meal = [int(i) for i in post['meal']]
+                recipes = recipes.filter(meal_time__in=meal)
+            except:
+                pass
 
-        try:
-            speed = [int(i) for i in post['speed']]
-            recipes = recipes.filter(speed__in=speed)
-        except:
-            pass
+            try:
+                speed = [int(i) for i in post['speed']]
+                recipes = recipes.filter(speed__in=speed)
+            except:
+                pass
 
-        return render(request, 'main.html',
-                      {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
-                       'recipes': recipes})
+            return render(request, 'main.html',
+                          {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
+                           'recipes': recipes, 'random_recipes': random_recipes})
+        elif which_act == "2":
+            search = request.POST['recipe_title_search'].capitalize()
+            recipes = Recipes.objects.filter(title__icontains=search)
+            return render(request, 'main.html',
+                          {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
+                           'recipes': recipes, 'random_recipes': random_recipes})
+        else:
+            return render(request, 'main.html',
+                          {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
+                           'random_recipes': random_recipes})
     else:
         return render(request, 'main.html',
-                      {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all()})
+                          {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
+                           'random_recipes': random_recipes})
 
 
 def register_page(request):
