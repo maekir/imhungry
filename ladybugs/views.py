@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from django.contrib.auth import login, authenticate, get_user
 from django.contrib.auth.forms import UserCreationForm #, PasswordChangeForm
 from django.shortcuts import render, redirect
@@ -7,7 +9,6 @@ from django.db import models
 from django.contrib.auth import update_session_auth_hash
 from django.contrib import messages
 
-# -*- coding: cp1251 -*-
 # Create your views here.
 from ladybugs.forms import SignUpForm, UserEditForm, PasswordChangeForm
 from ladybugs.models import CustomUser
