@@ -6,23 +6,87 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/home-styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
     <title>Что приготовить?</title>
 </head>
 
-
 <body>
     <!-- Logo and page header -->
-    <header class="text-center">
-        <img class="logo-image" src="./assets/heart.svg" alt="sohungry">
-        <h1 class="display-1">Что приготовить?</h1>
+<div class="header-navbar__cover pb-2 rounded-bottom">
+    <header class="text-center pt-2 mb-3">
+        <img class="logo-image" src="/static/assets/cake_simple.svg" alt="sohungry">
+        <h1 class="display-1 p-0 d-none d-md-block">Что приготовить?</h1>
     </header>
+    <div class="container-fluid mb-1">
+        <nav class="navbar navbar-expand-lg p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content">
+            <img src="/static/assets/menu.svg" alt="Меню"></button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <div class="navbar-nav ml-auto">
+                    {% if name %}
+                    <a class="btn btn-outline-dark ml-0 ml-lg-2 mt-1 mt-lg-0" href="/userpage" role="button">Личный кабинет</a>
+                    <a class="btn btn-outline-dark ml-0 ml-lg-2 mt-1 mt-lg-0" href="/logout" role="button">Выход</a>
+                    {% else %}
+                    <a class="btn btn-outline-dark ml-0 ml-lg-2 mt-1 mt-lg-0" href="/register" role="button">Регистрация</a>
+                    <a class="btn btn-outline-dark ml-0 ml-lg-2 mt-1 mt-lg-0" href="/login" role="button">Вход</a>
+                    {% endif %}
+                    <a class="btn btn-outline-dark ml-0 ml-lg-2 mt-1 mt-lg-0" href="/main" role="button">Главная</a>
+                </div>
+                <!-- /navbar-nav -->
+            </div>
+            <!-- /collapse -->
+        </nav>
+    </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="container-fluid mt-4">
-        <p class="text-right">@ladybugs 2018</p>
-    </footer>
+<h1 class="text-center mt-3 mb-4">{{ recipe.title }} - вот что можно приготовить!</h1>
+
+<div class="row mr-0 ml-1 ml-md-0 mb-3" id="full-recipe">
+    <div class="col-12 col-md-4 m-0">
+        <h3>Вам понадобится</h3>
+        <ul class="list-group">
+        {% for ingredient in recipe.recipesinside_set.all %}
+            <li class="list-group-item">      
+            <div class="d-flex align-items-center mb-1">
+                {{ ingredient.ingredient.name }}
+                <span class="badge badge-primary text-white ml-auto p-2">{{ ingredient.amount }}</span>
+            </div>
+            </li>
+        {% endfor %} 
+        </ul>
+    </div>
+    <div class="col-12 col-md-8 m-0 mt-3 mt-md-0">
+        <h3>Описание и способ приготовления</h3>
+        <p>{{ recipe.value }}</p>
+        <div class="row mr-0 mt-0 mt-md-3">
+                <div class="col-12 col-md">
+                    <div class="d-flex list-group-item mb-1">
+                        Сложность <span class="ml-auto text-dark pl-2">{{ recipe.get_complexity_display }}</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md">   
+                    <div class="d-flex list-group-item mb-1">
+                        Прием <span class="ml-auto text-dark pl-2">{{ recipe.get_meal_time_display }}</span>
+                    </div>            
+                </div>
+                <div class="col-12 col-md">
+                    <div class="d-flex list-group-item mb-1">
+                        Время <span class="ml-auto text-dark pl-2">{{ recipe.get_speed_display }}</span>
+                    </div>                
+                </div>
+            </div>            
+    </div>
+</div>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+
 
 </body>
 

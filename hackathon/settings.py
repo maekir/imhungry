@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/2.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.0/ref/settings/
 """
+# -*- coding: cp1251 -*-
+
 
 import os
 
