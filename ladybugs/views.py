@@ -7,6 +7,7 @@ from django.db import models
 from django.contrib.auth import update_session_auth_hash
 from django.contrib import messages
 
+# -*- coding: cp1251 -*-
 # Create your views here.
 from ladybugs.forms import SignUpForm, UserEditForm, PasswordChangeForm
 from ladybugs.models import CustomUser
