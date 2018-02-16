@@ -14,8 +14,7 @@ from ladybugs.models import CustomUser
 
 def main_page(request):
     random_recipes = Recipes.objects.order_by('?')
-    random_recipes = random_recipes[:2]
-    print(random_recipes)
+    random_recipes = random_recipes[:1]
     if request.method == 'POST':
         which_act = request.GET["act"]
         if which_act == "1":
@@ -48,8 +47,8 @@ def main_page(request):
                           {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
                            'recipes': recipes, 'random_recipes': random_recipes})
         elif which_act == "2":
-            search = request.POST['recipe_title_search'].capitalize()
-            recipes = Recipes.objects.filter(title__icontains=search)
+            search = request.POST['recipe_title_search']
+            recipes = Recipes.objects.filter(title__icontains=search) or Recipes.objects.filter(title__icontains=search.capitalize())
             return render(request, 'main.html',
                           {"name": get_user(request).get_username(), 'ingredients': Ingredients.objects.all(),
                            'recipes': recipes, 'random_recipes': random_recipes})
@@ -137,3 +136,7 @@ def user_edit_view(request):
     else:
         form = UserEditForm()
     return render(request, 'edit_user.html', {'form': form, 'username': username})
+
+def full_recipe(request):
+    recipe = Recipes.objects.get(id=int(request.GET['id']))
+    return render(request, 'recipe.html', {'recipe': recipe})

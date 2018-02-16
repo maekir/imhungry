@@ -27,4 +27,6 @@ urlpatterns = [
     path('userpage/', views.user_page, name='userpage'),
     path('userpage/edit_password.html', views.edit_password, name='edit_password'),
     path('userpage/edit_user.html', views.user_edit_view, name='edit_user'),
+    path('recipe/', views.full_recipe),
+    path('main/', views.main_page)
 ]

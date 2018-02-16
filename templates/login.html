@@ -8,27 +8,28 @@
 
     <link rel="stylesheet" href="/static/css/styles.css">
     <link rel="stylesheet" href="/static/css/signin-styles.css">
+
     <title>Вход | Что приготовить?</title>
 </head>
 
 <body>
     <header class="text-center">
-        <img class="logo-image" src="/static/assets/heart.svg" alt="sohungry">
+        <img class="logo-image" src="/static/assets/cake_simple.svg" alt="sohungry">
     </header>
 
     <div class="row">
         <div class="col"></div>
         <div class="col">
-            <div class="border rounded mt-5 p-4">
-                    <form class="form-signin" method="post">
-                        {% csrf_token %}
-                        <h2 class="display-4 text-center">Вход</h2>
-                        <label for="inputLogin" class="sr-only">Логин</label>
-                        <input type="text" id="inputLogin" class="form-control mb-1" placeholder="Логин" name="username" required autofocus>
-                        <label for="inputPassword" class="sr-only">Пароль</label>
-                        <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" name="password" required>
-                        <button class="btn btn-lg btn-primary btn-block mt-3" type="submit">Войти</button>
-                    </form>
+            <div class="border rounded mt-5 p-4 bg-white">
+                <form class="form-signin" method="post">
+                    {% csrf_token %}
+                    <h2 class="display-4 text-center">Вход</h2>
+                    <label for="inputLogin" class="sr-only">Логин</label>
+                    <input type="text" id="inputLogin" class="form-control mb-1" placeholder="Логин" name="username" required autofocus>
+                    <label for="inputPassword" class="sr-only">Пароль</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Пароль" name="password" required>
+                    <button class="btn btn-lg btn-primary btn-block mt-3 text-white" type="submit">Войти</button>
+                </form>
             </div>
             <!-- /border -->
         </div>
@@ -36,7 +37,9 @@
         <div class="col"></div>
     </div>
     <!-- /row -->
-
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
 </body>
 
 </html>
